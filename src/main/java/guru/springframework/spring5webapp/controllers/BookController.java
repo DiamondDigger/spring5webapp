@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class BookController {
 
-    private BookRepository bookrepository;
+    private final BookRepository bookrepository;
 
     public BookController(BookRepository bookrepository) {
         this.bookrepository = bookrepository;
